@@ -32,7 +32,7 @@ import axios from "axios";
 
 // export const BASE_API = "http://localhost:3000/api";
 
-export const BASE_API = "https://ijlj.in/api";
+export const BASE_API = "https://jmdlr.com/api";
 
 const baseApi = axios.create({
     baseURL: BASE_API
