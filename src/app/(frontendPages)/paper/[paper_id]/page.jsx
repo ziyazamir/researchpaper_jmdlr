@@ -28,7 +28,7 @@ const Publications = ({ params }) => {
             let paper = response.data.data;
             console.log(paper[0]);
             setpaper(paper[0]);
-            setmyfile('https://nitisara.in/uploads/' + paper[0].file);
+            setmyfile('https://nitisara.in/api/jmdlr/uploads/' + paper[0].file);
 
         })
     }, []);
@@ -52,7 +52,7 @@ const Publications = ({ params }) => {
                 {/* {issuesByVolume.map((paper, index) => { */}
                 <Paper sx={{ padding: '20px', marginBottom: '10px' }}>
                     <Grid container rowGap={1} columnSpacing={'10'}>
-                        <Grid sx={{ marginBottom: '10px', }} height={'100vh'} item xs={12}>
+                        <Grid sx={{ marginBottom: '10px', }} height={'fit-content'} item xs={12}>
 
 
                             <Typography paddingY={'10px'} fontSize={{ xs: '14px', md: '20px' }} variant='h4' >
@@ -66,7 +66,7 @@ const Publications = ({ params }) => {
                                     Download Paper
                                 </Button>
                             </a>
-                            <iframe width={'100%'} height={'90%'} src={myfile}></iframe>
+                            <iframe width={'100%'} style={{ height: '100vh' }} height={'100vh'} src={myfile}></iframe>
                             {/* <Document file={myfile}>
                                 <Page pageIndex={0} />
                             </Document> */}

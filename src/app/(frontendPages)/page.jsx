@@ -14,9 +14,9 @@ import { Grid } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
-import './assets/css/style.css';
+import '../assets/css/style.css';
 import Image from 'next/image';
-import DashboardAppBar from '@/components/admin/dashboardHeader';
+// import DashboardAppBar from '@/components/admin/dashboardHeader';
 const bull = (
   <Box
     component="span"
@@ -67,9 +67,9 @@ export default function MediaControlCard() {
         </Box> */}
             </Box>
           </Grid>
-          <Grid xs={12}>
+          {/* <Grid xs={12}>
             <DashboardAppBar />
-          </Grid>
+          </Grid> */}
           {/* <Grid item xs={12}>
             <CardMedia
               component="img"
@@ -89,16 +89,21 @@ export default function MediaControlCard() {
               <CardContent >
 
                 <Typography variant={{ sx: 'h1' }} fontSize={{ xs: '20px', md: '30px' }} marginBottom={'20px'} color="black" component="div">
-                  A Platform for Scholarly Discourse in Law
+                  Embracing Diverse Perspectives in Legal Academia
                 </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  The Indian Journal of Contemporary Legal and Social Issues (IJCLSI) is a quarterly, peer-reviewed, open-access journal dedicated to fostering academic discourse on legal and allied disciplines. This scholarly journal serves as a dynamic forum for scholars, practitioners, and students to share their insights and perspectives.
-                </Typography>
+                  The Journal of Multi-Disciplinary Legal Research (JMDLR) is a bi-monthly, open-access and single-blind peer reviewed journal fostering critical dialogue at the intersection of law and other disciplines. Here's what makes JMDLR unique: </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  IJCLSI welcomes submissions in the form of short articles, long articles, book reviews, case comments, legislative comments, and research papers. By publishing diverse contributions, the journal aims to promote legal awareness, stimulate intellectual exchange, and bridge the gap between academia, practice, and student communities.
-                </Typography>
+                  Diverse Perspectives: We welcome contributions from academics, practitioners, and students alike, ensuring a rich tapestry of viewpoints.   </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  Whether you are an academic, a legal professional, or a student, IJCLSI invites you to contribute to the ongoing discourse and shape the future of legal and social discourse. Submit your work, engage with thought-provoking content, and be a part of this vibrant intellectual community.
+                  Multidisciplinary Approach: We believe that understanding the law requires looking beyond traditional boundaries. JMDLR explores the interplay of law with fields like sociology, economics, history, and more.   </Typography>
+                <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
+                  Accessible Scholarship: Our open-access format breaks down barriers to knowledge, making cutting-edge legal research readily available to all.</Typography>
+                <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
+                  Engaging Content:  From thought-provoking articles and case comments to book reviews and legislative analyses, JMDLR offers a diverse range of content to ignite your intellectual curiosity.   </Typography>
+                <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
+                  Contribute your voice.  Shape the future of legal discourse
+                  Submit your work, engage in stimulating discussions, and be a part of a vibrant community shaping the future of law and its impact on society.
                 </Typography>
 
 
@@ -118,7 +123,7 @@ export default function MediaControlCard() {
           </Grid>
           <Grid item xs={12} md={6} alignContent={'center'} justifyContent={'center'}>
             <Image
-              src="/assets/ijclsi_side.png"
+              src="/assets/ijclsi_side2.png.jpg"
               alt="profile"
 
               sizes='width:100%'
@@ -142,11 +147,10 @@ export default function MediaControlCard() {
                   Open Access Policy
                 </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  IJCLSI is committed to promoting open access to scholarly research and facilitating knowledge dissemination. We follow an immediate open access model, making all published articles freely available online to readers worldwide, without subscription barriers or paywalls. This approach supports the free exchange of knowledge and maximizes the visibility, impact, and potential for collaboration within the academic community.
+                  At the forefront of advancing legal scholarship, JMDLR embraces Open Access as a cornerstone principle. We recognize the invaluable contribution of authors and respects their intellectual property rights. By publishing under a Creative Commons Attribution License (CC BY), authors retain copyright while granting us the privilege to disseminate their work broadly. This license encourages the legal community to engage with, cite, and build upon published research freely, provided appropriate credit is given.
                 </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  Authors published in IJCLSI retain copyright ownership while granting the journal the right to publish their work under a Creative Commons Attribution License (CC BY). The Authors grant third parties the right to use and share their work under the terms of a Creative Commons license agreement, as long as proper attribution is given to the original authors. This empowers authors to maintain control over their intellectual property while facilitating the widespread dissemination of their research.
-                </Typography>
+                  All articles published in JMDLR are made immediately available online, free of charge, to readers worldwide. This ensures that our authors' research reaches the widest possible audience, maximizing its impact, visibility, and potential for collaboration.  </Typography>
 
 
 
@@ -187,17 +191,14 @@ export default function MediaControlCard() {
 
 
                   <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                    IJCLSI is an open access platform that aims to promote critical analysis and discussion of legal issues and developments in India. <br />
-
+                    JMDLR is an open-access platform dedicated to promoting critical analysis and meaningful discussions of legal issues and developments in India. As an innovative academic journal, we are committed to fostering a dynamic and interdisciplinary legal discourse that enriches our understanding of the law.
                   </Typography>
                   <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                    IJCLSI seeks to encourage and publish high-quality research articles, case comments, and book reviews that critically analyze legal issues, trends, and developments. It fosters interdisciplinary approaches by incorporating perspectives from various disciplines, enriching legal discourse and providing a comprehensive understanding of legal matters. <br />
+                    Our Mission: Driving Legal Scholarship and Dialogue
+                    At the heart of JMDLR's mission is a steadfast commitment to publishing high-quality research articles, case comments, and book reviews that delve deep into the complexities of legal matters. By encouraging critical analysis and incorporating diverse perspectives from various disciplines, we strive to provide a comprehensive and thought-provoking exploration of the evolving legal landscape.
 
                   </Typography>
-                  <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                    With its open access model, the journal enhances access to legal information, promoting legal literacy, transparency, and accountability. Adhering to the highest standards of academic rigor and peer review, IJCLSI ensures that published articles and case comments meet the highest quality, relevance, and originality standards. Its target audience includes legal scholars and researchers, practitioners, policymakers, advocates, and the general public interested in legal issues and developments.
 
-                  </Typography>
 
                 </CardContent>
                 {/* <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
@@ -228,11 +229,9 @@ export default function MediaControlCard() {
                   Indexing
                 </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  IJCLSI takes great pride in its widespread indexing across 30+ prestigious platforms, ensuring its content reaches a vast audience. This extensive indexing guarantees that the high-quality legal scholarship published in the journal is easily discoverable and accessible to researchers, practitioners, legal professionals and academicians worldwide
-                </Typography>
+                  JMDLR takes great pride in its widespread indexing across 20+ prestigious platforms, ensuring its content reaches a vast audience. This extensive indexing guarantees that the high-quality legal scholarship published in the journal is easily discoverable and accessible to researchers, practitioners, legal professionals and academicians worldwide.  </Typography>
                 <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} marginBottom={'20px'} color="text.secondary" component="div">
-                  Manuscripts published on IJCLSI are widely disseminated through its growing presence on popular social media platforms. Its active accounts on LinkedIn, Instagram, and Twitter serve as dynamic hubs for sharing updates, promoting newly published articles, and engaging with the broader legal community. Through these channels, the journal effectively amplifies its reach, fostering lively discussions and enabling its readership to stay informed about the latest developments in legal research and analysis.
-                </Typography>
+                  Manuscripts published on JMDLR are widely disseminated through its growing presence on popular social media platforms. Its active accounts on LinkedIn, Instagram, and Twitter serve as dynamic hubs for sharing updates, promoting newly published articles, and engaging with the broader legal community. Through these channels, the journal effectively amplifies its reach, fostering lively discussions and enabling its readership to stay informed about the latest developments in legal research and analysis.   </Typography>
 
 
 
@@ -352,8 +351,8 @@ export default function MediaControlCard() {
             // className=" left-0 object-cover rounded-2xl"
             />
           </Grid>
-          <Grid item xs={12} marginY={'20px'}>
-            <Typography variant='h6' textAlign={'center'}>© Copyright   IJCLSI  All rights reserved</Typography>
+          <Grid item xs={12} marginY={'30px'}>
+            <Typography variant='h6' sx={{ fontSize: '15px' }} textAlign={'center'}>© Copyright   JMDLR  All rights reserved</Typography>
           </Grid>
         </Grid>
       </Card >

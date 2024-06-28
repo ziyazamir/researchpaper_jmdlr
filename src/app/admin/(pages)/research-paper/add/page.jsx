@@ -54,16 +54,29 @@ const Page = () => {
             console.log(data);
         })
     }, []);
+    function convertToSlug(Text) {
+
+        return Text
+            .toString()
+            .trim()
+            .toLowerCase()
+            .replace(/\s+/g, "-")
+            .replace(/[^\w\-]+/g, "")
+            .replace(/\-\-+/g, "-")
+            .replace(/^-+/, "")
+            .replace(/-+$/, "");
+
+    }
     function handleSubmit(event) {
         event.preventDefault();
         setloader(true);
         let data = new FormData();
         data.append('file', file);
-
+        data.append('filename', convertToSlug(title));
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'https://nitisara.in/api/upload.php',
+            url: 'https://nitisara.in/api/jmdlr/upload.php',
             // headers: {
             //     ...data.getHeaders()
             // },
@@ -76,6 +89,7 @@ const Page = () => {
                 let fileName = response.data.filename;
                 let formData = new FormData;
                 formData.append('title', title);
+                formData.append('slug', convertToSlug(title));
                 formData.append('author', author);
                 formData.append('doi', DOI);
                 formData.append('volume', volumeId);

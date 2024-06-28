@@ -38,6 +38,7 @@ export const POST = async (req, res) => {
     // const result = await response.json(); // Assuming the response from your PHP script is in JSON
 
     const title = formData.get("title");
+    const slug = formData.get("slug");
     const author = formData.get("author");
     const doi = formData.get("doi");
     const volume = formData.get("volume");
@@ -56,8 +57,8 @@ export const POST = async (req, res) => {
         //     path.join(process.cwd(), "public/pdfs/" + filename),
         //     buffer
         // );
-        const query = "INSERT INTO `paper`(`title`,`author`,`doi`, `volume`, `issue_id`, `file`, `abstact`) VALUES (?,?,?,?,?,?,?)";
-        const values = [title, author, doi, volume, issue, filename, abstract];
+        const query = "INSERT INTO `paper`(`title`,`slug`,`author`,`doi`, `volume`, `issue_id`, `file`, `abstact`) VALUES (?,?,?,?,?,?,?,?)";
+        const values = [title, slug, author, doi, volume, issue, filename, abstract];
         let results = myconnection.execute(query, values, (err, results) => {
             if (err) throw err;
             console.log('Data inserted:', results);

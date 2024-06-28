@@ -7,11 +7,11 @@ import myconnection from "@/app/utils/dbconnection";
 export const GET = async (req, { params }, res) => {
     try {
         const [results, fields] = await myconnection.query(
-            'SELECT * FROM paper WHERE id = ' + params.paper_id);
+            `SELECT * FROM paper WHERE slug = '${params.paper_id}' `);
 
         return NextResponse.json({ data: results }, { status: 202 });
     } catch (err) {
-        return NextResponse.json({ success: false }, { status: 500 });
+        return NextResponse.json({ success: err }, { status: 500 });
     }
 }
 export const POST = async (req, res) => {

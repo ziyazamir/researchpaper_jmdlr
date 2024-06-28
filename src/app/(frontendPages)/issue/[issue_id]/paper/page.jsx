@@ -42,7 +42,7 @@ const Publications = ({ params }) => {
                         <Grid container rowGap={1} columnSpacing={'10'}>
                             <Grid sx={{ marginBottom: '10px', }} item xs={12}>
 
-                                <Link href={'/paper/' + paper.id}>
+                                <Link href={'/paper/' + paper.slug}>
                                     <Typography sx={{ paddingLeft: '20px' }} fontSize={{ xs: '14px', md: '20px' }} variant='h4' >
                                         {index + 1}.{paper.title}
                                     </Typography>

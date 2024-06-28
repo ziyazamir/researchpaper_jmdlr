@@ -30,8 +30,9 @@ import axios from "axios";
 // }
 
 
-export const BASE_API = "http://localhost:3000/api";
-// export const BASE_API = "https://research-paper-xi.vercel.app/api";
+// export const BASE_API = "http://localhost:3000/api";
+
+export const BASE_API = "https://ijlj.in/api";
 
 const baseApi = axios.create({
     baseURL: BASE_API
