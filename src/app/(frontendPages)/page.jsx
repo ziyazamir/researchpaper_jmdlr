@@ -45,7 +45,7 @@ export default function MediaControlCard() {
               </CardContent> */}
 
               <Image
-                src="/assets/image.png"
+                src="/assets/jmdlrHome.jpg"
                 alt="profile"
 
                 sizes='width:100%'

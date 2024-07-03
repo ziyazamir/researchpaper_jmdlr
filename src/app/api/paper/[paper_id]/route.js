@@ -61,6 +61,6 @@ export async function DELETE(req, res) {
         "DELETE FROM paper WHERE `paper`.`id` =" + id
     );
 
-    console.log(results);
+    // console.log(results);
     return NextResponse.json({ data: results }, { status: 200 });
 }

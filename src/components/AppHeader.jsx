@@ -73,19 +73,19 @@ export default function ResponsiveAppBar() {
                     </Typography> */}
                     <Box display={{ xs: 'none', md: 'block' }}>
                         <Image
-                            src="/assets/navlogo.jpg"
+                            src="/assets/navlogo.png"
                             alt="profile"
                             dis
                             sizes='width:100%'
                             height={100}
                             width={100}
-                            style={{ objectFit: "cover", width: 'auto', height: '70px', margin: 'auto', }}
+                            style={{ objectFit: "cover", width: 'auto', height: '90px', margin: 'auto', }}
                         // className=" left-0 object-cover rounded-2xl"
                         />
                     </Box>
                     <Box display={{ xs: 'block', md: 'none' }}>
                         <Image
-                            src="/assets/navlogo.jpg"
+                            src="/assets/navlogo.png"
                             alt="profile"
 
                             sizes='width:100%'
