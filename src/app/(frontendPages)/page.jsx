@@ -32,39 +32,18 @@ export default function MediaControlCard() {
   return (
     <>
       <Card >
-        <Grid sx={{ height: '100%', paddingX: '50px' }} container justifyContent={'center'} alignItems={'center'} >
+        <Grid sx={{ height: '100%', }} container justifyContent={'center'} alignItems={'center'} >
           <Grid item xs={12}>
-            <Box sx={{ position: 'relative' }} >
-              {/* <CardContent >
-                <Typography variant="h2">
-                  Indian Journal of Contemporary Legal and Social Issues
-                `}</Typography>
-                <Typography variant={{ sx:'h1' }} color="text.secondary" component="div">{`
-                  ISSN: 2583-2824
-                `}</Typography>
-              </CardContent> */}
+            <Box className="mybg" sx={{
+              position: 'relative', backgroundImage: 'url(/assets/jmdlrHome.jpg)', height: { xs: '150px', md: '500px' },
+              backgroundRepeat: 'no-repeat',
+              backgroundClip: 'padding-box',
+              backgroundPosition: 'center',
+              backgroundAttachment: 'fixed',
+              padding: '2px',
+              backgroundSize: 'contain'
+            }} >
 
-              <Image
-                src="/assets/jmdlrHome.jpg"
-                alt="profile"
-
-                sizes='width:100%'
-                height={100}
-                width={100}
-                style={{ objectFit: "cover", width: '100%', height: 'auto' }}
-              // className=" left-0 object-cover rounded-2xl"
-              />
-              {/* <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <IconButton aria-label="previous">
-            {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
-        </Box> */}
             </Box>
           </Grid>
           {/* <Grid xs={12}>
@@ -81,7 +60,7 @@ export default function MediaControlCard() {
         </Grid>
       </Card>
 
-      <Card sx={{ backgroundColor: '#f7f7f7', borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+      <Card sx={{ backgroundColor: 'white', borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
         <Grid container paddingX={{ xs: '20px', md: '50px' }} >
 
           <Grid item xs={12} md={6}>
@@ -136,7 +115,7 @@ export default function MediaControlCard() {
 
         </Grid>
       </Card >
-      <Card sx={{ borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+      <Card sx={{ backgroundColor: '#f7f7f7', borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
         <Grid container paddingX={{ xs: '20px', md: '50px' }} justifyContent={'center'}>
 
           <Grid item xs={12} md={6}>
@@ -171,10 +150,10 @@ export default function MediaControlCard() {
 
 
 
-      <Card raised sx={{ borderRadius: '0', backgroundColor: '#f7f7f7', }}  >
+      <Card raised sx={{ borderRadius: '0', backgroundColor: 'white', }}  >
         <Paper
-          backgroundColor={'#f7f7f7'}
-          sx={{ backgroundColor: '#f7f7f7' }}
+          // backgroundColor={'#'}
+          // sx={{ backgroundColor: '#f7f7f7' }}
           // sx={{ backgroundImage: 'url(https://img.freepik.com/free-photo/3d-rendering-arrow-hitting-target_23-2151266580.jpg)', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', WebkitBackgroundSize: 'cover', }}
           elevation={5}>
           <Grid container paddingX={{ xs: '20px', md: '50px' }} justifyContent={'center'} className='' >
@@ -218,7 +197,7 @@ export default function MediaControlCard() {
           </Grid>
         </Paper>
       </Card >
-      <Card sx={{ backgroundColor: 'white', borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+      <Card sx={{ backgroundColor: '#f7f7f7', borderRadius: '0', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
         <Grid container paddingX={{ xs: '20px', md: '50px' }} >
 
           <Grid item xs={12} md={6}>
@@ -251,7 +230,7 @@ export default function MediaControlCard() {
           </Grid>
           <Grid position={'relative'} item xs={12} md={6} justifyContent={'center'}>
             <Image
-              src="/assets/ijclsi.jpg"
+              src="/assets/jmdlr_indexing.png"
               alt="profile"
 
 
@@ -356,31 +335,7 @@ export default function MediaControlCard() {
           </Grid>
         </Grid>
       </Card >
-      {/* <Card raised sx={{ borderRadius: '0', backgroundColor: '#eee', }}  >
-        <Paper sx={{ paddingY: '20px' }} elevation={5}>
-          <Grid container paddingX={{ xs: '20px',md:'100px' }} backgroundColor={'white'} >
-            <Grid item xs={12}>
-              <Typography backgroundColor={'#e6e6e6'} color={'black'} borderBottom={'2px solid #eee'} textAlign={'center'} variant='h4' margin={'auto'} display={'block'}>
-                Publication Frequency
-              `}</Typography>
-            </Grid>
-            <Grid item sx={{ margin: 'auto' }} xs={10}>
-              <Box >
-                <CardContent >
 
-                  <Typography variant="h6" fontSize={{ xs: '14px', md: '20px' }} textAlign={'center'} marginBottom={'20px'} color="text.secondary" component="div">{`
-                    The journal publishes one issue quarterly i.e. one issue every three months.
-                  `}</Typography>
-
-
-                </CardContent>
-               
-              </Box>
-            </Grid>
-
-          </Grid>
-        </Paper>
-      </Card > */}
     </>
   );
 }

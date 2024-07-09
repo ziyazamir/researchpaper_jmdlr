@@ -219,7 +219,7 @@ export default function ResponsiveAppBar() {
                     </Box> */}
 
                     <Box sx={{
-                        flexGrow: 1, columnGap: '60px', justifyContent: 'end',
+                        flexGrow: 1, columnGap: '80px', justifyContent: 'end',
 
                         display: { xs: 'none', md: 'flex' }
                     }}>
